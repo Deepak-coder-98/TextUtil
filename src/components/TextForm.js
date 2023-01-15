@@ -79,24 +79,26 @@ const TextForm = memo(function TextForm({ heading, mode, showAlert }) {
           onFocus={handleClearClick}
           style={toggleMode()}
         ></textarea>
-        <button className="btn btn-primary mx-1" onClick={handleUpClick}>
+        <div className="d-flex flex-row flex-wrap">
+        <button className="btn btn-primary mx-1 my-3" onClick={handleUpClick}>
           Convert to uppercase
         </button>
-        <button className="btn btn-primary mx-1" onClick={handleLoClick}>
+        <button className="btn btn-primary mx-1 my-3" onClick={handleLoClick}>
           Convert to lowercase
         </button>
-        <button className="btn btn-primary mx-1" onClick={handleCopyClick}>
+        <button className="btn btn-primary mx-1 my-3" onClick={handleCopyClick}>
           Copy Text
         </button>
-        <button className="btn btn-primary mx-1" onClick={handleClearClick}>
+        <button className="btn btn-primary mx-1 my-3" onClick={handleClearClick}>
           Clear Text
         </button>
         <button
-          className="btn btn-primary mx-1"
+          className="btn btn-primary mx-1 my-3"
           onClick={handleExtraSpacesClick}
         >
           Remove Extra Spaces
         </button>
+        </div>
       </div>
       <div className="container my-2" style={toggleMode()}>
         <h2>Your text summary</h2>
